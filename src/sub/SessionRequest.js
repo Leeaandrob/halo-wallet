@@ -157,11 +157,10 @@ function SessionRequest({ haloAddress, sessionRequest, onRequestProcessed }) {
         {vizComponent}
       </div>
       <p className={"label-text"} style={{ margin: "20px 0" }}>
-        You will need to scan your HaLo after clicking the "Sign request"
-        button.
+        Toque em Aprovar e escaneei o seu livro pela a última vez.
       </p>
-      <Button onClick={() => btnSignTransaction()}>Sign request</Button>
-      <Button onClick={() => btnReject()}>Deny</Button>
+      <Button onClick={() => btnSignTransaction()}>Aprovar</Button>
+      <Button onClick={() => btnReject()}>Recusar</Button>
     </div>
   );
 }

@@ -17,7 +17,7 @@ function ScanWeb3ModalQR({ onScan, onError, onCancel }) {
   return (
     <div className={"page-content"}>
       <div style={{ marginTop: "20px", marginBottom: "10px" }}>
-        <p className={"label-text"}>Cole a url aqui:</p>
+        <p className={"label-text"}>Cole aqui:</p>
       </div>
       <input
         type="text"
@@ -33,7 +33,7 @@ function ScanWeb3ModalQR({ onScan, onError, onCancel }) {
           fullWidth={true}
           className={"btn-pad"}
         >
-          Pareamento manual
+          Ativar carteira
         </Button>
         {hasPairings && (
           <Button
