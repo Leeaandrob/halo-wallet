@@ -113,7 +113,7 @@ function ListPairings({
   return (
     <div className={"page-content"}>
       <div style={{ marginBottom: "40px" }}>
-        <p className={"label-text"}>Active HaLo tag:</p>
+        <p className={"label-text"}>Seu endereço:</p>
         <p
           style={{
             textTransform: "none",
@@ -125,7 +125,7 @@ function ListPairings({
           {haloAddress}
         </p>
         <p className={"label-text"} style={{ marginTop: 20 }}>
-          Paired with the following dApps:
+          Em breve novidades...
         </p>
         <ul>
           {Object.keys(pairings).map((x) => (
@@ -135,23 +135,25 @@ function ListPairings({
           ))}
         </ul>
       </div>
-      <Button onClick={() => btnPair()} fullWidth={true} className={"btn-pad"}>
-        Scan QR code
-      </Button>
-      <Button
-        onClick={() => btnSwitchHalo()}
-        fullWidth={true}
-        className={"btn-pad"}
-      >
-        Switch HaLo tag
-      </Button>
-      <Button
-        onClick={() => btnResetWallet()}
-        fullWidth={true}
-        className={"btn-pad"}
-      >
-        Reset wallet
-      </Button>
+      <div style={{display: "none"}}>
+        <Button onClick={() => btnPair()} fullWidth={true} className={"btn-pad"}>
+          Scan QR code
+        </Button>
+        <Button
+          onClick={() => btnSwitchHalo()}
+          fullWidth={true}
+          className={"btn-pad"}
+        >
+          Switch HaLo tag
+        </Button>
+        <Button
+          onClick={() => btnResetWallet()}
+          fullWidth={true}
+          className={"btn-pad"}
+        >
+          Reset wallet
+        </Button>
+      </div>
     </div>
   );
 }
