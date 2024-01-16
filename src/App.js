@@ -124,10 +124,11 @@ function App() {
     switch (appState.name) {
       case "init":
         return (
-        <div className={"lds-grid"}>
-          <img className={"loading-icon"} src={loadingIcon} alt="loading"/>
-          {/* <p>Initializing...</p> */}
-        </div>);
+          <div className={"lds-grid"}>
+            <img className={"loading-icon"} src={loadingIcon} alt="loading" />
+            {/* <p>Initializing...</p> */}
+          </div>
+        );
       case "pairing":
         return (
           <ScanWeb3ModalQR
@@ -147,10 +148,11 @@ function App() {
         );
       case "do_pair":
         return (
-        <div className={"lds-grid"}>
-          <img className={"loading-icon"} src={loadingIcon} alt="loading"/>
-          {/* <p className={"label-text"}>Pairing...</p> */}
-        </div>);
+          <div className={"lds-grid"}>
+            <img className={"loading-icon"} src={loadingIcon} alt="loading" />
+            {/* <p className={"label-text"}>Pairing...</p> */}
+          </div>
+        );
       case "session_proposal":
         return (
           <SessionProposal
@@ -174,9 +176,11 @@ function App() {
           />
         );
       default:
-        return <div className={"lds-grid-text"}>
-          <p className={"label-text"}>Unknown app state.</p>
-        </div>;
+        return (
+          <div className={"lds-grid-text"}>
+            <p className={"label-text"}>Unknown app state.</p>
+          </div>
+        );
     }
   }
 

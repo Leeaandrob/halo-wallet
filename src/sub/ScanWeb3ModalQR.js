@@ -3,7 +3,10 @@ import Button from "./Button.tsx";
 import { wcGetPairings } from "./WalletConnect";
 
 function ScanWeb3ModalQR({ onScan, onError, onCancel }) {
-  let [manualURIValue, setManualURIValue] = useState("");
+  const params = new URLSearchParams(window.location.search);
+  let [manualURIValue, setManualURIValue] = useState(
+    params.get("uri") ? params.get("uri") : "",
+  );
 
   let pairings = wcGetPairings();
   let hasPairings = Object.keys(pairings).length > 0;

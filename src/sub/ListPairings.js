@@ -137,6 +137,15 @@ function ListPairings({
       </div>
       <div>
         <Button
+          onClick={() =>
+            window.open(`https://web3.paradigma.education`, "_blank")
+          }
+          fullWidth={true}
+          className={"btn-pad"}
+        >
+          Voltar a pagina de Mint
+        </Button>
+        <Button
           onClick={() => btnResetWallet()}
           fullWidth={true}
           className={"btn-pad"}
