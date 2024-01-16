@@ -135,8 +135,21 @@ function ListPairings({
           ))}
         </ul>
       </div>
-      <div style={{display: "none"}}>
-        <Button onClick={() => btnPair()} fullWidth={true} className={"btn-pad"}>
+      <div>
+        <Button
+          onClick={() => btnResetWallet()}
+          fullWidth={true}
+          className={"btn-pad"}
+        >
+          Desconectar carteira
+        </Button>
+      </div>
+      <div style={{ display: "none" }}>
+        <Button
+          onClick={() => btnPair()}
+          fullWidth={true}
+          className={"btn-pad"}
+        >
           Scan QR code
         </Button>
         <Button
