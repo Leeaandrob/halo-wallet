@@ -134,7 +134,7 @@ function SessionRequest({ haloAddress, sessionRequest, onRequestProcessed }) {
   }
 
   return (
-    <div>
+    <div className={"page-content"}>
       <p className={"label-text"}>
         Request from the dApp:
         <br />
@@ -156,11 +156,17 @@ function SessionRequest({ haloAddress, sessionRequest, onRequestProcessed }) {
       >
         {vizComponent}
       </div>
-      <p className={"label-text"} style={{ margin: "20px 0" }}>
+      <p className={"label-text"} style={{ marginTop: "20px" }}>
         Toque em Aprovar e escaneei o seu livro pela a última vez.
       </p>
-      <Button onClick={() => btnSignTransaction()}>Aprovar</Button>
-      <Button onClick={() => btnReject()}>Recusar</Button>
+      <div className={"button-container"}>
+        <Button className={"btn-pad"} onClick={() => btnSignTransaction()}>
+          Aprovar
+        </Button>
+        <Button className={"btn-pad btn-pad-red"} onClick={() => btnReject()}>
+          Recusar
+        </Button>
+      </div>
     </div>
   );
 }
