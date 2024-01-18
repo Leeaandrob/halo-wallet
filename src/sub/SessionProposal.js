@@ -82,11 +82,11 @@ function SessionProposal({
   }
 
   return (
-    <div  className={"page-content"}>
+    <div className={"page-content"}>
       <div className={"display-flex-icon"}>
-        <img src={logo} alt="icon" style={{width: "45px"}} />
-        <img src={arrowGreen} alt="icon" style={{width: "40px"}} />
-        <img src={iconBook} alt="icon" style={{width: "60px"}} />
+        <img src={logo} alt="icon" style={{ width: "45px" }} />
+        <img src={arrowGreen} alt="icon" style={{ width: "40px" }} />
+        <img src={iconBook} alt="icon" style={{ width: "60px" }} />
       </div>
       <p className={"label-text text-center"}>
         The following dApp wants to pair with this wallet:
@@ -100,20 +100,17 @@ function SessionProposal({
           dApp URL: {proposal.params.proposer.metadata.url}
         </p>
         <p className={"label-text"} style={{ marginTop: 20 }}>
-          You will need to scan your HaLo after approving the request.
+          You will need to scan your Book after approving the request.
         </p>
         <div className={"button-container"}>
-          <Button 
-            className={"btn-pad"}
-            onClick={() => btnScanPublicKey()}
-          >
-            Approve request
+          <Button className={"btn-pad"} onClick={() => btnScanPublicKey()}>
+            Aprovar
           </Button>
-          <Button 
+          <Button
             className={"btn-pad btn-pad-red"}
             onClick={() => btnDenyRequest()}
           >
-            Deny
+            Recusar
           </Button>
         </div>
       </div>

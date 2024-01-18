@@ -166,7 +166,7 @@ function ListPairings({
           fullWidth={true}
           className={"btn-pad"}
         >
-          Switch HaLo tag
+          Switch NFT tag
         </Button>
         <Button
           onClick={() => btnResetWallet()}

@@ -157,7 +157,7 @@ function SessionRequest({ haloAddress, sessionRequest, onRequestProcessed }) {
         {vizComponent}
       </div>
       <p className={"label-text"} style={{ marginTop: "20px" }}>
-        Toque em Aprovar e escaneei o seu livro pela a última vez.
+        Toque em Aprovar e escaneie o seu livro pela a última vez.
       </p>
       <div className={"button-container"}>
         <Button className={"btn-pad"} onClick={() => btnSignTransaction()}>

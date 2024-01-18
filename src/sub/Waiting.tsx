@@ -1,16 +1,21 @@
-import React from 'react'
-import classNames from 'classnames'
+import React from "react";
+import classNames from "classnames";
 
 interface IProps {
-  className?: string
-  text?: string
+  className?: string;
+  text?: string;
 }
 
 export default function Waiting({ className, text }: IProps) {
   return (
-    <div className={classNames('waiting', className)}>
+    <div className={classNames("waiting", className)}>
       <div className="waiting-x">
-        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          fill="none"
+        >
           <path
             fill="#0c0c0c"
             d="M30 60c16.569 0 30-13.431 30-30C60 13.431 46.569 0 30 0 13.431 0 0 13.431 0 30c0 16.569 13.431 30 30 30Z"
@@ -23,5 +28,5 @@ export default function Waiting({ className, text }: IProps) {
       </div>
       <span className="waiting-text">{text}</span>
     </div>
-  )
+  );
 }
