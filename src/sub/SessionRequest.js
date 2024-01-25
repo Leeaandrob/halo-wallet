@@ -83,7 +83,6 @@ function SessionRequest({ haloAddress, sessionRequest, onRequestProcessed }) {
     const { topic } = sessionRequest;
     const response = await processCall(sessionRequest);
     await web3wallet.respondSessionRequest({ topic, response });
-    alert("Transaction signed", JSON.stringify(response));
     onRequestProcessed();
   }
 
