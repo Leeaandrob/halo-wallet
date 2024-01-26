@@ -125,7 +125,7 @@ function ListPairings({
           {haloAddress}
         </p>
         <p className={"label-text"} style={{ marginTop: 20 }}>
-          Em breve novidades...
+          Volte para a outra aba.
         </p>
         <ul>
           {Object.keys(pairings).map((x) => (
@@ -136,15 +136,6 @@ function ListPairings({
         </ul>
       </div>
       <div>
-        <Button
-          onClick={() =>
-            window.open(`https://web3.paradigma.education`, "_blank")
-          }
-          fullWidth={true}
-          className={"btn-pad"}
-        >
-          Voltar a pagina de Mint
-        </Button>
         <Button
           onClick={() => btnResetWallet()}
           fullWidth={true}
