@@ -137,6 +137,18 @@ function ListPairings({
       </div>
       <div>
         <Button
+          onClick={() => {
+            window.open(
+              `https://app.paradigma.education/success?address=${haloAddress}`,
+              "_blank",
+            );
+          }}
+          fullWidth={true}
+          className={"btn-pad"}
+        >
+          Paradigma
+        </Button>
+        <Button
           onClick={() => btnResetWallet()}
           fullWidth={true}
           className={"btn-pad"}
